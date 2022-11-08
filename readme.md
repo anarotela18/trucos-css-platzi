@@ -1,1 +1,2 @@
 ## Ejemplos del blog <a target="_blank" href="https://platzi.com/blog/10-trucos-de-css-que-te-van-a-sorprender/">10 trucos de CSS que te van a sorprender</a>
+## <a href="https://anarotela18.github.io/trucos-css-platzi/">Link del proyecto: https://anarotela18.github.io/trucos-css-platzi/</a>
