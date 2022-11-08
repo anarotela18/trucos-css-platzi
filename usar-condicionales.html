@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Usar Condicionales</title>
+    <style>
+      div.conditional { 
+        color: white; 
+        background: blue;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+      }
+
+      input:checked + div { 
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+            <a href="./" class="btn-primary btn">Volver al inicio</a>
+            <h4 class="my-3"> Ejemplos del blog
+              <a target="_blank" href="https://platzi.com/blog/10-trucos-de-css-que-te-van-a-sorprender/">10 trucos de CSS que te van a sorprender</a>
+            </h4>
+          <h2>Usar condicionales</h2>
+          <p>CSS te permite definir si se va a aplicar un estilo o no, dependiendo del
+          estado de un <code>checkbox</code> . Se hace a través de la    <code>pseudo-clase</code> <code>:checked</code>, la cual sirve para validar
+          si el <code>checkbox</code> está en <code>true</code> o en    <code>false</code>.
+          </p>
+          <p>Esto da muchísimas posibilidades a la hora de maquetar un sitio, por ejemplo, <a
+                  href="https://platzi.com/blog/7-pasos-para-crear-un-menu-responsivo-con-css/"
+                  target="_blank"
+                  rel=" noopener"> crear un menú responsivo sin utilizar JavaScript </a>o lo que se te ocurra.</p>
+          <p>Ahora, imagina que dependiendo del estado del checkbox quieres que el    <code>background</code> del siguiente elemento sea azul o verde.
+          </p>
+          <code><input type=checkbox> Click me!
+          <div class="conditional">
+            ¿Azul o verde?
+          </div>
+          <p>
+              El CSS necesario para lograrlo es el siguiente.
+          </p>
+          <code>div.conditional { 
+            color: white; 
+            background: blue;
+            text-align: center;
+            padding: 10px;
+            margin-top: 10px;
+          }
+
+          input:checked + div { 
+            background: green;
+          }</code>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

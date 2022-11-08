@@ -1,0 +1,1 @@
+## Ejemplos del blog <a target="_blank" href="https://platzi.com/blog/10-trucos-de-css-que-te-van-a-sorprender/">10 trucos de CSS que te van a sorprender</a>

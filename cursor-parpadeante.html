@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Cursor Parpadeante</title>
+    <style>
+    :root {
+	    --p-color: #0044ee
+    }
+      .blink span {
+        letter-spacing: .2rem;
+        border-right: 2px solid var(--p-color);
+        animation: blink 3s steps(30, end), cursor 1s step-end infinite;
+    }
+    @keyframes blink {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes cursor {
+        from, to {
+            border-color: transparent;
+        }
+        50% {
+            border-color: var(--p-color);
+        }
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-12">
+            <a href="./" class="btn-primary btn">Volver al inicio</a>
+            <h4 class="my-3"> Ejemplos del blog
+              <a target="_blank" href="https://platzi.com/blog/10-trucos-de-css-que-te-van-a-sorprender/">10 trucos de CSS que te van a sorprender</a>
+            </h4>
+            <h2> Diseñar un cursor parpadeante</h2>
+            <p>Usar animaciones para dotar de efectos a nuestros sitios tiene que ser
+                considerado uno de los superpoderes de todo buen frontend. Entre esos
+                efectos hacer un cursor que parpadee como el de Notion o la terminal cuando
+                no estamos escribiendo, puede ser algo interesante.
+            </p>
+            <p>Para eso, primero se tiene que definir el texto con el que vamos a jugar.
+            </p>
+            <div class="blink my-5">
+                <span>Estoy escribiendo...</span>
+            </div>
+            
+            <p>Con esto listo, definimos en los estilos que el <code>span</code> va a
+                tener un borde derecho de <code>2px</code> . Este borde es el que va a
+                funcionar como cursor y con la propiedad <code>animation</code> indicamos
+                cómo va a operar la animación.
+            </p>
+            <code>.blink span {
+            letter-spacing: .2rem;
+            border-right: 2px solid var(--p-color);
+            animation: blink 3s steps(30, end), cursor 1s step-end infinite;
+            }
+            @keyframes blink {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+            }
+            </code>
+            <br>
+            <code>
+            @keyframes cursor {
+            from, to {
+                border-color: transparent;
+            }
+            50% {
+                border-color: var(--p-color);
+            }
+            }</code>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
